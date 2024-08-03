@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'view/screens/home_screen.dart';
-import 'view/screens/playlist_download.dart';
 import 'view/screens/splash_screen.dart';
 
 void main() {

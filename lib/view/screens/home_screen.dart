@@ -19,10 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       bottomNavigationBar: CurvedNavigationBar(
         color: Colors.redAccent.shade700,
         backgroundColor: const Color.fromRGBO(33, 33, 33, 1),
         index: _currentIndex,
+        animationCurve: Curves.easeInOut,
+        animationDuration: const Duration(milliseconds: 300),
         items: const [
           Icon(
             Icons.videocam_rounded,

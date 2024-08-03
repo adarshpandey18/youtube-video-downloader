@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_video_downloader/services/youtube_service.dart';
 import 'package:youtube_video_downloader/view/widgets/custom_button.dart';
 import 'package:youtube_video_downloader/view/widgets/search_text_field.dart';
 
@@ -11,6 +12,13 @@ class VideoDownload extends StatefulWidget {
 
 class _VideoDownloadState extends State<VideoDownload> {
   final TextEditingController _videoLink = TextEditingController();
+  late YoutubeService youtubeService;
+  @override
+  void initState() {
+    youtubeService = YoutubeService();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +45,13 @@ class _VideoDownloadState extends State<VideoDownload> {
             ),
 
             // download button
-            CustomButton(text: 'Download', function: () {}),
+            CustomButton(
+              text: 'Download',
+              function: () => youtubeService.downloadVideo(
+                _videoLink.toString().trim(),
+                context,
+              ),
+            ),
           ],
         ),
       ),
