@@ -74,5 +74,5 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## Contact
 
 - Author: Adarsh Pandey
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [Adarsh Pandey](itsadarshvijaypandey@gmail.com)
 - GitHub: [adarshpandey18](https://github.com/adarshpandey18)
