@@ -1,6 +1,6 @@
 # YouTube Video Downloader
 
-A Flutter-based application to download YouTube videos.
+A Flutter-based application designed to download YouTube videos. This cross-platform app supports Android, iOS, web, and desktop. It features an intuitive UI for searching and downloading videos directly from YouTube, utilizing the `youtube_explode` package for efficient video extraction and download.
 
 ## Features
 
